@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404 - Page Not Found</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .error-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .error-code {
+      font-size: 8rem;
+      font-weight: bold;
+      margin: 0;
+      background: linear-gradient(135deg, #60a5fa, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .error-message {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .error-subtext {
+      font-size: 1rem;
+      color: #a0aec0;
+      margin-top: 30px;
+    }
+
+    .back-link {
+      margin-top: 40px;
+      padding: 12px 30px;
+      background: rgba(96, 165, 250, 0.2);
+      border: 1px solid rgba(96, 165, 250, 0.5);
+      border-radius: 8px;
+      color: #60a5fa;
+      text-decoration: none;
+      transition: all 0.3s;
+      display: inline-block;
+    }
+
+    .back-link:hover {
+      background: rgba(96, 165, 250, 0.3);
+      border-color: #60a5fa;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="stars"></canvas>
+
+  <div class="error-container">
+    <h1 class="error-code">404</h1>
+    <p class="error-message">
+      Sorry, seems you're searching for a page that doesn't exist.<br>
+      This could mean 2 things:<br>
+      <strong>1.</strong> My code is broken<br>
+      <strong>2.</strong> You're just stubborn
+    </p>
+    <p class="error-subtext">Either way, let's get you back on track</p>
+    <a href="/" class="back-link">← Back to Home</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
