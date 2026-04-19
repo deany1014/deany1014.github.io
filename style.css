@@ -114,6 +114,7 @@ header h1 {
 
   transition: transform 0.3s, box-shadow 0.3s;
   overflow: hidden;
+  cursor: pointer;
 
   /* NEW */
   --floatY: 0px;
@@ -148,8 +149,18 @@ header h1 {
 }
 
 .card a {
+  position: absolute;
+  inset: 0;
   color: #60a5fa;
   text-decoration: none;
+  padding: 25px;
+  display: flex;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.card a:hover {
+  color: #93c5fd;
 }
 
 /* subtle floating animation */
